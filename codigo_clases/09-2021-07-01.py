@@ -1,44 +1,44 @@
-# class conClase:
-#     varia = 1
-#     def __init__(self) -> None:
-#         self.var = 2
+class conClase:
+    varia = 1
+    def __init__(self) -> None:
+        self.var = 2
     
-#     def metodo(self):
-#         pass
+    def metodo(self):
+        pass
     
-#     def __oculto(self):
-#         pass
+    def __oculto(self):
+        pass
 
-# obj = conClase()
-# obj.metodo()
+obj = conClase()
+obj.metodo()
 
 
-# class rectangulo:
-#     def __init__(self, base: int, altura: int) -> None:
-#         self.altura = altura
-#         self.base = base
+class rectangulo:
+    def __init__(self, base: int, altura: int) -> None:
+        self.altura = altura
+        self.base = base
     
-#     def area(self):
-#         area = self.base * self.altura
-#         return area
+    def area(self):
+        area = self.base * self.altura
+        return area
     
-#     def perimetro(self):
-#         perimetro = (2 * self.base) + (2 * self.altura)
-#         return perimetro
+    def perimetro(self):
+        perimetro = (2 * self.base) + (2 * self.altura)
+        return perimetro
 
-# areaRectangulo = rectangulo(8, 9)
-# areaDos = areaRectangulo.area()
-# print(areaDos)
+areaRectangulo = rectangulo(8, 9)
+areaDos = areaRectangulo.area()
+print(areaDos)
 
 
-# class A:
-#     pass
+class A:
+    pass
 
-# class B(A):
-#     pass
+class B(A):
+    pass
 
-# class C(A):
-#     pass
+class C(A):
+    pass
 
 # class D(A, B):
 #     pass
@@ -46,40 +46,40 @@
 # d = D()
 
 
-# class Vehiculo:
-#     def  __init__(self, marca: str, color: str) -> None:
-#         self.marca = marca
-#         self.color = color
+class Vehiculo:
+    def  __init__(self, marca: str, color: str) -> None:
+        self.marca = marca
+        self.color = color
     
-#     def __str__(self) -> str:
-#         return "marca: {}, color: {}".format(self.marca, self.color)
+    def __str__(self) -> str:
+        return "marca: {}, color: {}".format(self.marca, self.color)
 
-# class CarroAntiguo(Vehiculo):
-#     def __init__(self, marca: str, color: str, modelo: int) -> None:
-#         Vehiculo.__init__(self, marca, color)
-#         self.modelo = modelo
+class CarroAntiguo(Vehiculo):
+    def __init__(self, marca: str, color: str, modelo: int) -> None:
+        Vehiculo.__init__(self, marca, color)
+        self.modelo = modelo
     
-#     def __str__(self) -> str:
-#         return "marca: {}, color: {}, modelo {}".format(self.marca, self.color, self.modelo)
+    def __str__(self) -> str:
+        return "marca: {}, color: {}, modelo {}".format(self.marca, self.color, self.modelo)
 
-# class CarroNuevo(Vehiculo):
-#     def __init__(self, marca: str, color: str, motor: str) -> None:
-#         Vehiculo.__init__(self, marca, color)
-#         self.motor = motor
+class CarroNuevo(Vehiculo):
+    def __init__(self, marca: str, color: str, motor: str) -> None:
+        Vehiculo.__init__(self, marca, color)
+        self.motor = motor
     
-#     def __str__(self) -> str:
-#         return "marca: {}, color: {}, motor {}".format(self.marca, self.color, self.motor)
+    def __str__(self) -> str:
+        return "marca: {}, color: {}, motor {}".format(self.marca, self.color, self.motor)
 
-# class NuevoGama(CarroNuevo):
-#     def __init__(self, marca: str, color: str, motor: str, precio: float) -> None:
-#         CarroNuevo.__init__(self, marca, color, motor)
-#         self.precio = precio
+class NuevoGama(CarroNuevo):
+    def __init__(self, marca: str, color: str, motor: str, precio: float) -> None:
+        CarroNuevo.__init__(self, marca, color, motor)
+        self.precio = precio
     
-#     def __str__(self) -> str:
-#         return "marca: {}, color: {}, motor {}, precio {}".format(self.marca, self.color, self.motor, self.precio)
+    def __str__(self) -> str:
+        return "marca: {}, color: {}, motor {}, precio {}".format(self.marca, self.color, self.motor, self.precio)
 
-# f1 = NuevoGama("BMW", "rojo", "v8", 1000)
-# print(f1)
+f1 = NuevoGama("BMW", "rojo", "v8", 1000)
+print(f1)
 
 
 class BD:
