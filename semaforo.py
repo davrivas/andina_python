@@ -18,6 +18,7 @@ while True:
     led_rojo2.value(0)
     led_amarillo2.value(0)
     led_azul2.value(1)
+    print("rojo", "verde")
     utime.sleep(1)
     
     led_rojo1.value(0)
@@ -26,6 +27,7 @@ while True:
     led_rojo2.value(0)
     led_amarillo2.value(1)
     led_azul2.value(0)
+    print("amarillo")
     utime.sleep(0.5)
     
     led_rojo1.value(0)
@@ -34,6 +36,7 @@ while True:
     led_rojo2.value(1)
     led_amarillo2.value(0)
     led_azul2.value(0)
+    print("verde", "rojo")
     utime.sleep(1)
     
     led_rojo1.value(0)
@@ -42,6 +45,7 @@ while True:
     led_rojo2.value(0)
     led_amarillo2.value(1)
     led_azul2.value(0)
+    print("amarillo")
     utime.sleep(0.5)
 
 if __name__ == ("__main__"):
