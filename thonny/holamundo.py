@@ -2,7 +2,7 @@ from machine import Pin
 import utime
 
 led_onboard = Pin(2, Pin.OUT)
-time = .5
+time = .1
 
 while True:
     led_onboard.value(1)
