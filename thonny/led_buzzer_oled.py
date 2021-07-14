@@ -19,11 +19,15 @@ def setup(led_val: int, buzzer_val: int, oled_text: str):
     utime.sleep(1)
     
 def on():
-    setup(1, 65000, "On")
+    setup(1, 10, "On")
 
 def off():
     setup(0, 0, "Off")
 
-while True:
-    on()
-    off()
+def main():
+    while True:
+        on()
+        off()
+
+if __name__ == "__main__":
+    main()
