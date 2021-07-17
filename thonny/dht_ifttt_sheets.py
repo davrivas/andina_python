@@ -22,7 +22,7 @@ if conectaWifi("Claro_61039A", "M5C9A3W7P3W8"):
     print ("Conexión exitosa!")
     print('Datos de la red (IP/netmask/gw/DNS):', miRed.ifconfig())
       
-    url = "https://api.thingspeak.com/update?api_key=JGC63E6LYPPIHTWA"
+    url = "https://maker.ifttt.com/trigger/sensor_dht/with/key/CS5bYnTkWNS01hQSP5rYU"
     
     while (True):        
         sensorDHT.measure()
@@ -32,12 +32,12 @@ if conectaWifi("Claro_61039A", "M5C9A3W7P3W8"):
 
         print ("T={:02d} ºC, H={:02d} %".format (temp,hum))
 
-        endpoint = url + "&field1=" + str(temp) + "&field2=" + str(hum)
+        endpoint = url + "?value1=" + str(temp) + "&value2=" + str(hum)
         respuesta = urequests.get(endpoint)
-        rint("Respuesta", respuesta.text)
-        print ("Status", respuesta.status_code)
+        print("Respuesta:", respuesta.text)
+        print ("Status:", respuesta.status_code)
         respuesta.close()
-        time.sleep(15)
+        time.sleep(30)
 else:
     print ("Imposible conectar")
     miRed.active (False)
