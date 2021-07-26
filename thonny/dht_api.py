@@ -34,7 +34,7 @@ if conectaWifi("Claro_61039A", "M5C9A3W7P3W8"):
 
         endpoint = url + "&field1=" + str(temp) + "&field2=" + str(hum)
         respuesta = urequests.get(endpoint)
-        rint("Respuesta", respuesta.text)
+        print("Respuesta", respuesta.text)
         print ("Status", respuesta.status_code)
         respuesta.close()
         time.sleep(15)
